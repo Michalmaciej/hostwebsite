@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffc0cb; /* różowy kolor tła */
+}
+
+.question-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* zmień czcionkę na ładniejszą */
+    color: #ff0099; /* kremowy kolor tekstu */
+    z-index: 0;
+}
+
+button {
+    background-color: #ff69b4; /* różowy kolor tła przycisku */
+    color: #ffc0cb; /* kremowy kolor tekstu przycisku */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.random-image {
+    position: fixed;
+    z-index: 1; /* Ustaw na wartość większą niż pozostałe elementy, aby zdjęcie było na wierzchu */
+    max-width: 150px; /* Maksymalna szerokość zdjęcia */
+    max-height: 150px; /* Maksymalna wysokość zdjęcia */
+}
